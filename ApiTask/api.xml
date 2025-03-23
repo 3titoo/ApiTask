@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiTask</name>
+    </assembly>
+    <members>
+        <member name="T:ApiTask.Controllers.AccountController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTask.Controllers.AccountController.#ctor(Microsoft.AspNetCore.Identity.UserManager{ApiTask.identity.AppUser},Microsoft.AspNetCore.Identity.SignInManager{ApiTask.identity.AppUser},Microsoft.AspNetCore.Identity.RoleManager{ApiTask.identity.AppRole})">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="roleManager"></param>
+        </member>
+        <member name="M:ApiTask.Controllers.AccountController.Register(ApiTask.DTO.RegisterDTO)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.AccountController.IsEmailInUse(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiTask.Controllers.orderController">
+            <summary>
+            سيمبل كنترولر للأوردرات
+            </summary>
+        </member>
+        <member name="F:ApiTask.Controllers.orderController._context">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTask.Controllers.orderController.#ctor(ApiTask.Models.appDbContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:ApiTask.Controllers.orderController.Get">
+            <summary>
+            علشان اجيب كل الاوردرات
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.orderController.Get(System.Int32)">
+            <summary>
+            علشان اجيب اوردر معين
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.orderController.Post(ApiTask.Models.Order)">
+            <summary>
+            علشان اضيف اوردر جديد
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.orderController.Put(System.Int32,ApiTask.Models.Order)">
+            <summary>
+            علشان اعدل اي اوردر
+            </summary>
+            <param name="id"></param>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.orderController.Delete(System.Int32)">
+            <summary>
+            امسح
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiTask.Controllers.orderItemController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ApiTask.Controllers.orderItemController._context">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTask.Controllers.orderItemController.#ctor(ApiTask.Models.appDbContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:ApiTask.Controllers.orderItemController.Get(System.Int32)">
+            <summary>
+            علشان اجيب كل العناصر في اوردر معين
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.orderItemController.Get(System.Int32,System.Int32)">
+            <summary>
+            علشان اجيب عنصر معين في اوردر معين
+            </summary>
+            <param name="id"></param>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.orderItemController.post(ApiTask.Models.OrderItem)">
+            <summary>
+            علشان اضيف عنصر جديد في اوردر معين
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.orderItemController.put(System.Int32,System.Int32,ApiTask.Models.OrderItem)">
+            <summary>
+            علشان اعدل عنصر في اوردر معين
+            </summary>
+            <param name="id"></param>
+            <param name="orderId"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTask.Controllers.orderItemController.delete(System.Int32,System.Int32)">
+            <summary>
+            علشان احذف عنصر في اوردر معين
+            </summary>
+            <param name="id"></param>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiTask.DTO.RegisterDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApiTask.identity.AppRole">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApiTask.identity.AppUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiTask.identity.AppUser.PersonName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApiTask.Migrations.reg">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiTask.Migrations.reg.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiTask.Migrations.reg.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiTask.Migrations.reg.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ApiTask.Models.appDbContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTask.Models.appDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{ApiTask.Models.appDbContext})">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:ApiTask.Models.appDbContext.Orders">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiTask.Models.appDbContext.OrderItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApiTask.Models.Attribute.OrderNumberGenerator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTask.Models.Attribute.OrderNumberGenerator.GenerateOrderNumber">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ApiTask.Models.Attribute.postiveNumberAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTask.Models.Attribute.postiveNumberAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="validationContext"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
